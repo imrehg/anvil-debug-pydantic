@@ -7,7 +7,12 @@ components:
   properties: {col_widths: '{}'}
   name: content_panel
   layout_properties: {slot: default}
-  components: []
+  components:
+  - name: Trigger
+    properties: {text: Trigger}
+    type: Button
+    layout_properties: {grid_position: 'VQBVYD,VFFTFN'}
+    event_bindings: {click: Trigger_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links
